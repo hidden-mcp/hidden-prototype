@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+.cache/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+pip-wheel-metadata/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.env
+.env.*
+.venv/
+venv/
+.vscode/
+ENV/
+.envrc
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

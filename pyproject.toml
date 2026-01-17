@@ -1,0 +1,31 @@
+[project]
+name = "hidden-prototype"
+version = "0.1.0"
+description = "Autonomous prototyping and execution MCP server."
+readme = "README.md"
+authors = [{ name = "choi_hyk", email = "blindlchoil@gmail.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+hidden-prototype = "hidden_prototype.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["ruff>=0.14.11"]
+
+[tool.ruff]
+line-length = 130
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"] # E(Error), F(Pyflakes), I(Isort)
+fixable = ["ALL"]
+
+[tool.ruff.format]
+quote-style = "double"
